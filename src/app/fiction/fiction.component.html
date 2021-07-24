@@ -1,0 +1,13 @@
+<h2><img class="material-icons" src="../../assets/svg/Back.svg" /> Fiction</h2>
+<label>
+    <input type="text" placeholder="Search">
+</label>
+
+<div class="fiction-books  flex-container">
+    <div *ngFor="name of name; index as i;" class="flex-item">
+        <img src="https://www.gutenberg.org/cache/epub/65900/pg65900.cover.medium.jpg" />
+        <h5>{{name[i]}}</h5>
+        <p>{{id[i]}}</p>
+    </div>
+    
+  </div>

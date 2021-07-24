@@ -1,0 +1,66 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Toolbar -->
+<div id="toolbar" [hidden]="!appshow" role="banner">
+  <h1>Gutenberg Project</h1>
+  <div>A social cataloging website that allows you to freely search its database of books, annotations, and reviews.</div>
+  <div class="books card-container">
+    <a routerLink="/fiction" (click)="show()" routerLinkActive="active" class="" rel="noopener">
+      <img class="material-icons" src="../assets/svg/Fiction.svg" />
+      <span>FICTION</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />   
+    </a>
+  
+    <a class="" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+      <img class="material-icons" src="../assets/svg/Drama.svg" />
+      <span>DRAMA</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />   
+    </a>
+  
+    <a class="" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+      <img class="material-icons" src="../assets/svg/Humour.svg" />
+      <span>HUMOR</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />   
+    </a>
+  
+    <a class="" target="_blank" rel="noopener" href="https://angular.io/cli">
+      <img class="material-icons" src="../assets/svg/Politics.svg" />
+      <span>POLITICS</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />
+    </a>
+  
+    <a class="" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+      <img class="material-icons" src="../assets/svg/Philosophy.svg" />
+      <span>PHILOSOPHY</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />   
+    </a>
+  
+    <a class="" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+      <img class="material-icons" src="../assets/svg/History.svg" />
+      <span>HISTORY</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />  
+    </a>
+  
+    <a class="" target="_blank" rel="noopener" href="https://angular.io/tutorial">
+      <img class="material-icons" src="../assets/svg/Adventure.svg" />
+      <span>ADVENTURE</span>
+      <img class="material-icons" src="../assets/svg/Next.svg" />   
+    </a>
+  </div>
+</div>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<router-outlet></router-outlet>

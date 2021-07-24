@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Montserrat, Semi Bold;
+    src: url(../../assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat, Regular;
+    src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+
+h2 {
+  margin: 0;
+  padding: 12px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #5E56E7;
+}
+
+label {
+  position: relative;
+  left: 13px;
+  top: 12px;
+}
+  
+label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  background: url(../../assets/svg/Search.svg);
+  top: 3px;
+  width: 16px;
+  height: 16px;
+}
+  
+input {
+    padding: 10px 10px 10px 40px;
+    font-family: Montserrat, Regular;
+    font-size: 16px;
+    background: #F0F0F6;
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+    width: calc(100% - 70px);
+    font-weight: 600;
+    color: #A0A0A0;
+}
+
+.fiction-books::after {
+    content: '';
+    width: 100%;
+}
+
+/*.flex-item:last-child { /* or `:nth-child(n + 4)`
+    order: 1;
+}*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    background: #F0F0F6;
+    width: 100%;
+  }
+  .flex-container::after {
+    content: '';
+    width: 100%;
+  }
+
+.fiction-books div:nth-of-type(n) {
+    margin: 20px 0px 0px 10px;
+    width: 30%;
+}
+
+.fiction-books div:nth-of-type(n) img:nth-of-type(n) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 114px;
+    height: 162px;
+}
+
+.fiction-books div:nth-of-type(n) h5:nth-of-type(n) {
+    margin: 8px 8px 0px 8px;
+    font-size: 12px;
+    font-family: Montserrat, Regular;
+}
+
+.fiction-books div:nth-of-type(n) p:nth-of-type(n) {
+    margin: 0px 8px 0px 8px;
+    font-size: 12px;
+    font-family: Montserrat, Regular;
+}
